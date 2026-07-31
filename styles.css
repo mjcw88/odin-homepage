@@ -8,6 +8,11 @@
     --black: #000000;
     --white: #FFFFFF;
     --grey: #565656;
+    --purple: #7C75CA;
+    --orange: #D88F39;
+    --green: #5E8F4D;
+    --pink: #CA7599;
+    --lighterBlue: #4692D9;    
 }
 
 *,
@@ -46,13 +51,20 @@ header {
 }
 
 footer {
+    color: var(--white);
     background-color: var(--blue);
 }
 
-header, 
-section, 
+header,  
 footer {
-    padding: var(--padding);
+    padding: var(--padding) var(--padding) 5rem var(--padding);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: var(--padding) var(--padding) 10rem var(--padding);
 }
 
 .headshot-container {
@@ -86,7 +98,7 @@ footer {
     padding-left: calc(1rem + var(--padding));
     padding-right: calc(1rem + var(--padding));
     width: 100%;
-    font-size: calc(6rem + 2.5vw);
+    font-size: calc(5rem + 2.5vw);
     overflow: hidden;
 }
 
@@ -98,7 +110,7 @@ footer {
 }
 
 .about {
-    font-size: calc(3rem + 1.25vw);
+    font-size: calc(2.5rem + 1.25vw);
     color: var(--black);
 }
 
@@ -106,13 +118,15 @@ footer {
     font-size: 1.25rem;
 }
 
-.socials-container-header {
+.socials-container-header,
+.socials-container-footer {
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
 
-.socials-container-header svg {
+.socials-container-header svg,
+.socials-container-footer svg {
     --size: 2rem;
 
     max-width: var(--size);
@@ -125,6 +139,92 @@ footer {
 .phone-symbol-container,
 .email-symbol-container {
     display: none;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.project-container {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.screenshot-one {
+    background-color: var(--purple);
+}
+
+.screenshot-two {
+    background-color: var(--orange);
+}
+
+.screenshot-three {
+    background-color: var(--green);
+}
+
+.screenshot-four {
+    background-color: var(--pink);
+}
+
+.screenshot-five {
+    background-color: var(--lighterBlue);
+}
+
+.screenshot-six {
+    background-color: var(--green);
+}
+
+.project-screenshot {
+    color: var(--white);
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.project-header-container {
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-name-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 16px;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-links svg {
+    --size: 2rem;
+
+    max-width: var(--size);
+    max-height: var(--size);
+    flex-shrink: 0;
+
+    cursor: pointer;
+}
+
+.project-details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 2rem 4rem 2rem;
+}
+
+.project-details-container > p {
+    color: var(--grey);
 }
 
 @media only screen and (min-width: 768px) {
