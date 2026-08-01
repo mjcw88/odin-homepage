@@ -346,12 +346,8 @@ section {
     .about-container,
     section,
     footer {
-        margin-inline: auto;
+        margin: auto;
         max-width: 1200px;
-    }
-
-    footer {
-        margin-inline: auto;
     }
 
     .footer-details-container {
