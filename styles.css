@@ -23,6 +23,11 @@
     box-sizing: border-box;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 body {
     font-size: 1rem;
     line-height: 1.5;
@@ -55,8 +60,13 @@ footer {
     background-color: var(--blue);
 }
 
-header,  
-footer {
+.footer-details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+header, .footer-details-container {
     padding: var(--padding) var(--padding) 5rem var(--padding);
 }
 
@@ -77,10 +87,6 @@ section {
 .name-container {
     display: flex;
     justify-content: center;
-}
-
-.header-headshot img {
-    width: 100%;
 }
 
 .header-title {
@@ -118,15 +124,13 @@ section {
     font-size: 1.25rem;
 }
 
-.socials-container-header,
-.socials-container-footer {
+.socials-container-header {
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
 
-.socials-container-header svg,
-.socials-container-footer svg {
+.socials-container-header svg {
     --size: 2rem;
 
     max-width: var(--size);
@@ -197,7 +201,6 @@ section {
 
 .project-name {
     font-size: 1.5rem;
-    font-weight: bold;
     padding-left: 16px;
 }
 
@@ -226,6 +229,34 @@ section {
 .project-details-container > p {
     color: var(--grey);
 }
+
+.contact-container > h1 {
+    font-size: 3rem;
+}
+
+.contact-text-container > p {
+    font-size: 1.25rem;
+}
+
+.socials-container-footer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.socials-container-footer svg {
+    --size: 3rem;
+
+    max-width: var(--size);
+    max-height: var(--size);
+    flex-shrink: 0;
+
+    cursor: pointer;
+}
+
+/* .footer-headshot {
+
+} */
 
 @media only screen and (min-width: 768px) {
     .phone-symbol-container,
