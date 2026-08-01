@@ -104,7 +104,7 @@ section {
     padding-left: calc(1rem + var(--padding));
     padding-right: calc(1rem + var(--padding));
     width: 100%;
-    font-size: calc(5rem + 2.5vw);
+    font-size: clamp(3rem, 6vw, 9rem);
     overflow: hidden;
 }
 
@@ -116,7 +116,7 @@ section {
 }
 
 .about {
-    font-size: calc(2.5rem + 1.25vw);
+    font-size: clamp(2rem, 4vw, 6rem);
     color: var(--black);
 }
 
@@ -133,8 +133,8 @@ section {
 .socials-container-header svg {
     --size: 2rem;
 
-    max-width: var(--size);
-    max-height: var(--size);
+    width: var(--size);
+    height: var(--size);
     flex-shrink: 0;
 
     cursor: pointer;
@@ -147,7 +147,7 @@ section {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
 }
 
@@ -197,23 +197,30 @@ section {
 .project-name-container {
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
+    align-items: flex-start;
 }
 
 .project-name {
+    text-align: left;
     font-size: 1.5rem;
     padding-left: 16px;
+    flex: 1;
+    min-width: 0;
 }
 
 .project-links {
     display: flex;
     gap: 1rem;
+    flex-shrink: 0;
+    align-items: flex-start;
 }
 
 .project-links svg {
     --size: 2rem;
 
-    max-width: var(--size);
-    max-height: var(--size);
+    width: var(--size);
+    height: var(--size);
     flex-shrink: 0;
 
     cursor: pointer;
@@ -222,6 +229,7 @@ section {
 .project-details-container {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 1rem;
     padding: 2rem 2rem 4rem 2rem;
 }
@@ -247,8 +255,8 @@ section {
 .socials-container-footer svg {
     --size: 3rem;
 
-    max-width: var(--size);
-    max-height: var(--size);
+    width: var(--size);
+    height: var(--size);
     flex-shrink: 0;
 
     cursor: pointer;
