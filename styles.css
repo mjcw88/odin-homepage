@@ -78,15 +78,20 @@ section {
 }
 
 .headshot-container {
-    position: relative;
+    display: flex;
+    justify-content: center;
     padding-left: var(--padding);
     padding-right: var(--padding);
 }
 
-.header-headshot,
-.name-container {
+.headshot-container {
     display: flex;
     justify-content: center;
+}
+
+.header-headshot {
+    position: relative;
+    display: inline-flex;
 }
 
 .header-title {
@@ -101,8 +106,8 @@ section {
     left: 0;
     text-align: left;
     color: var(--white);
-    padding-left: calc(1rem + var(--padding));
-    padding-right: calc(1rem + var(--padding));
+    padding-left: 1rem;
+    padding-right: 1rem;
     width: 100%;
     font-size: clamp(3rem, 6vw, 9rem);
     overflow: hidden;
@@ -147,7 +152,7 @@ section {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
     gap: 2rem;
 }
 
