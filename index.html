@@ -11,16 +11,14 @@
         <header>
             <div class="headshot-container">
                 <div class="header-headshot">
-                    <img
-                        srcset="./assets/pexels-amorie-sam-468180864-30692588-mobile.jpg 800w,
-                                ./assets/pexels-amorie-sam-468180864-30692588-tablet.jpg 1000w,
-                                ./assets/pexels-amorie-sam-468180864-30692588-desktop.jpg 1200w"
-                        sizes="(max-width: 768px) 768px,
-                            (max-width: 1280px) 1280px,
-                            1280px"
-                        src="./assets/pexels-amorie-sam-468180864-30692588-desktop.jpg"
-                        alt="Joe Bloggs standing behind his desk."
-                    />
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="./assets/pexels-amorie-sam-468180864-30692588-mobile.jpg">
+                        <source media="(max-width: 1279px)" srcset="./assets/pexels-amorie-sam-468180864-30692588-tablet.jpg">
+                        <img
+                            src="./assets/pexels-amorie-sam-468180864-30692588-desktop.jpg"
+                            alt="Joe Bloggs standing behind his desk."
+                        />
+                    </picture>
                     <div class="name-container">
                         <h1 class="header-title name">Joe Bloggs</h1>
                     </div>
@@ -207,16 +205,14 @@
             </div>
         </div>
         <div class="footer-headshot">
-            <img
-                srcset="./assets/pexels-amorie-sam-468180864-30692586-mobile.jpg 800w,
-                        ./assets/pexels-amorie-sam-468180864-30692586-tablet.jpg 1000w,
-                        ./assets/pexels-amorie-sam-468180864-30692586-desktop.jpg 1200w"
-                sizes="(max-width: 768px) 768px,
-                    (max-width: 1280px) 1280px,
-                    1280px"
-                src="./assets/pexels-amorie-sam-468180864-30692586-desktop.jpg"
-                alt="Joe Bloggs sitting behind his desk."
-            />
+            <picture>
+                <source media="(max-width: 767px)" srcset="./assets/pexels-amorie-sam-468180864-30692586-mobile.jpg">
+                <source media="(max-width: 1279px)" srcset="./assets/pexels-amorie-sam-468180864-30692586-tablet.jpg">
+                <img
+                    src="./assets/pexels-amorie-sam-468180864-30692586-desktop.jpg"
+                    alt="Joe Bloggs sitting behind his desk."
+                />
+            </picture>
         </div>
     </footer>
 </body>
