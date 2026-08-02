@@ -52,7 +52,7 @@ footer::before {
 
 header::before {
     background: var(--blue);
-    clip-path: polygon(0px 0px, 100% 0, 100% calc(60% - 250px), 0 60%);
+    clip-path: polygon(0px 0px, 100% 0, 100% calc(50% - 250px), 0 50%);
 }
 
 header,
@@ -284,6 +284,10 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+    header::before {
+        clip-path: polygon(0px 0px, 100% 0, 100% calc(50% - 125px), 0 calc(50% + 125px));
+    }
+
     header,
     section {
         padding-left: var(--paddingTriple);
@@ -432,7 +436,7 @@ footer {
 
 @media only screen and (min-width: 1280px) {
     header::before {
-        clip-path: polygon(0px 0px, 100% 0, 100% calc(40% - 0px), 0 100%);
+        clip-path: polygon(0px 0px, 100% 0, 100% calc(50%), 0 calc(50% + 250px));
     }
 
     header,
