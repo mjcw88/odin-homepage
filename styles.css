@@ -185,13 +185,13 @@ footer {
 .socials-container-header svg,
 .project-links svg,
 .socials-container-footer svg {
-    transition: transform 150ms ease;
+    transition: transform 75ms ease;
 }
 
 .socials-container-header svg:hover,
 .project-links svg:hover,
 .socials-container-footer svg:hover {
-    transform: scale(1.20);
+    transform: scale(1.10);
 }
 
 .phone-symbol-container,
