@@ -136,8 +136,12 @@ footer {
 }
 
 .about {
-    font-size: 3rem;
     color: var(--black);
+}
+
+.about,
+.contact-container > h1 {
+    font-size: 3rem;
 }
 
 .about-container > p {
@@ -259,10 +263,6 @@ footer {
     color: var(--grey);
 }
 
-.contact-container > h1 {
-    font-size: 3rem;
-}
-
 .contact-text-container > p {
     font-size: 1.25rem;
 }
@@ -341,7 +341,8 @@ footer {
         padding-bottom: 1rem;
     }
 
-    .about {
+    .about,
+    .contact-container > h1 {
         font-size: 2rem;
     }
 
