@@ -4,5 +4,15 @@ Designing a basic homepage template with a focus on animations, accessibility co
 
 Full project specs can be found [here](https://www.theodinproject.com/lessons/node-path-advanced-html-and-css-homepage). 
 
+##### Sources
+
+- https://www.pexels.com/photo/senior-businessman-in-office-setting-30692586/
+
+- https://www.pexels.com/photo/elegant-businessman-in-office-setting-30692588/
+
+- https://devicon.dev/
+
+- https://www.svgrepo.com/
+
 ##### Live Preview
 - https://mjcw88.github.io/odin-homepage/
